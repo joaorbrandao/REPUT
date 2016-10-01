@@ -7,7 +7,7 @@ A pasta **SRV** contém um servidor Web desenvolvido em Node.js que permite apre
 
 ## Bugs and Issues
 
-Have a bug or an issue with this theme? [Open a new issue](https://github.com/joaorbrandao/RaspberryPi-Projects/issues) here on GitHub or leave a comment on there.
+Have a bug or an issue with this work? [Open a new issue](https://github.com/joaorbrandao/RaspberryPi-Projects/issues) here on GitHub or leave a comment on there.
 
 ## Criadores
 
