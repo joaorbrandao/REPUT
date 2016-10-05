@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
 
@@ -41,13 +41,13 @@
                 <a href="#top" onclick=$("#menu-close").click();>REPUT - G5</a>
             </li>
             <li>
-                <a href="#top" onclick=$("#menu-close").click();>Home</a>
+                <a href="#top" onclick=$("#menu-close").click();>Início</a>
             </li>
             <li>
                 <a href="#about" onclick=$("#menu-close").click();>Sobre</a>
             </li>
             <li>
-                <a href="#services" onclick=$("#menu-close").click();>Goals</a>
+                <a href="#services" onclick=$("#menu-close").click();>Objetivos</a>
             </li>
             <!--<li>
                 <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
@@ -98,12 +98,16 @@
                                 <i class="fa fa-cloud fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>LOL</strong>
+                                    <strong>Configuração Base</strong>
                                 </h4>
                                 <p>
-                                  - Uma gateway de acesso (GW), que isole a rede do grupo da rede “pública”, i.e. a rede do laboratório;
-                                  <br>- Um Servidor Web (SRV), a correr na porta 80, que deverá apresentar uma página identificativa do grupo. A página Web deverá estar acessível a partir do exterior da rede do grupo, ou seja, a partir do endereço externo da GW;
-                                  <br>- Os sistemas GW e SRV devem ser equipamentos físicos distintos;
+                                    <ul>
+                                        <li>Uma gateway de acesso (GW), que isole a rede do grupo da rede “pública”, i.e. a rede do laboratório.</li>
+                                        <li>A atribuição dos IPs na rede deve ser dinâmica (DHCP).</li>
+                                        <li>Todas as máquinas da rede devem ter um nome próprio e ser reconhecidas no domínio interno com o seguinte formato: grupo[número_do_grupo].isep.ipp.pt.</li>
+                                        <li>Os utilizadores da empresa, tanto ethernet como Wi-Fi, acedem à rede do ISEP apenas através da GW.</li>
+                                        <li>Um Servidor Web (SRV), a correr na porta 80, que deverá apresentar uma página identificativa do grupo. </li>
+                                    </ul>
                                 </p>
                                 <!--<a href="#" class="btn btn-light">Learn More</a>-->
                             </div>
@@ -115,10 +119,18 @@
                                 <i class="fa fa-compass fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>Service Name</strong>
+                                    <strong>VLANs</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>
+                                    <ul>
+                                        <li>Uma rede interna, com separação com recurso a VLANs:
+                                            <ul>
+                                                <li>VLAN1: ligação de clientes via ethernet.</li>
+                                                <li>VLAN2: ligação de clientes via Wi-Fi através de ligações seguras, comum portal cativo e autenticação num servidor RADIUS</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -128,10 +140,15 @@
                                 <i class="fa fa-flask fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>Service Name</strong>
+                                    <strong>Servidor Web (SRV)</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>
+                                    <ul>
+                                        <li>Os sistemas GW e SRV devem ser equipamentos físicos distintos.</li>
+                                        <li>A página Web deverá estar acessível a partir do exterior da rede do grupo, ou seja, a partir do endereço externo da GW.</li>
+                                        <li>Um Servidor VPN (IPSec), configurado no SRV, para acesso à rede do grupo, apenas por utilizadores autorizados.</li>
+                                    </ul>
+                                </p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -141,10 +158,15 @@
                                 <i class="fa fa-shield fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>Service Name</strong>
+                                    <strong>SNPM e VoIP</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>
+                                    <ul>
+                                        <li>Na GW e SRV deve ser instalado um agente SNMP.</li>
+                                        <li>Uma aplicação de gestão da rede deve ser instalada no SRV, para monitorizar o tráfego na interface de acesso à rede exterior da GW, e o estado dos outros equipamentos de rede com suporte SNMP.</li>
+                                        <li>Um serviço VoIP de modo a que os empregados da empresa possam fazer chamadas internas entre si.</li>
+                                    </ul>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -226,10 +248,11 @@
 
     <!-- Map -->
     <section id="contact" class="map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+        <!--<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3002.0160543955985!2d-8.6102892850209!3d41.177845679284005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd246449b419e1c1%3A0x16a6fd2fcace4efe!2sISEP!5e0!3m2!1spt-PT!2spt!4v1475617770153" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
         <br />
         <small>
-            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3002.0160543955985!2d-8.6102892850209!3d41.177845679284005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd246449b419e1c1%3A0x16a6fd2fcace4efe!2sISEP!5e0!3m2!1spt-PT!2spt!4v1475617770153"></a>
         </small>
         </iframe>
     </section>
@@ -245,7 +268,7 @@
                         <br>Telecomunicações</p>
                     <ul class="list-unstyled">
                       <!--  <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>-->
-                        <li><i class="fa fa-envelope-o fa-fw"></i>
+                        <li class="myLi"><i class="fa fa-envelope-o fa-fw"></i>
                           <a href="mailto:1120401@isep.ipp.pt">Henrique Figueiredo</a> | <a href="mailto:1120484@isep.ipp.pt">João Brandão</a> | <a href="mailto:1110774@isep.ipp.pt">José Macedo</a>
                         </li>
                     </ul>
