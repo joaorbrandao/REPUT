@@ -4,8 +4,12 @@
   "description": "REPUT Server",
   "main": "index.js",
   "scripts": {
-      "start":"node app.js",
+    "start":"node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express" : "^4.14.0",
+    "body-parser" : "^1.15.2"
   },
   "author": "Joao Brandao",
   "license": "ISC"
