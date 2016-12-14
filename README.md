@@ -7,14 +7,14 @@ A pasta **SRV** contém uma página Web para apresentar informação do grupo de
 
 ## Bugs and Issues
 
-Have a bug or an issue with this work? [Open a new issue](https://github.com/joaorbrandao/RaspberryPi-Projects/issues) here on GitHub or leave a comment on there.
+Have a bug or an issue with this work? [Open a new issue](https://github.com/joaorbrandao/REPUT/issues) here on GitHub or leave a comment on there.
 
 ## Criadores
 
 Os desenvolvimentos aqui efetuados são da autoria de:
 * [**João Brandão**](https://joaorbrandao.github.io)
 * [**Henrique Figueiredo**](https://henriquefig.github.io)
-* **Miguel Macedo**
+* [**Miguel Macedo**](https://pt.linkedin.com/in/zemiguelmacedo/en)
 
 ## Copyright and License
 
