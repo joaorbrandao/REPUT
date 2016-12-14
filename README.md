@@ -3,7 +3,7 @@ Este repositório serve para manter o projeto desenvolvido em REPUT, 2016/2017.
 
 ## SRV
 
-A pasta **SRV** contém um servidor Web desenvolvido em Node.js que permite apresentar uma página Web.
+A pasta **SRV** contém uma página Web para apresentar informação do grupo de trabalho no Servidor Web (SRV).
 
 ## Bugs and Issues
 
